@@ -1,0 +1,14 @@
+{
+  "name": "lineal-data-structures",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "g++ -o data-structures main.cpp -std=c++17",
+    "start": "npm run build && ./data-structures",
+    "reset": "rm -rf data-structures"
+  },
+  "author": "",
+  "license": "ISC"
+}
