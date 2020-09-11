@@ -17,9 +17,14 @@ Node* DataStructure::createNode(int data, Node* nodeNext) {
 string DataStructure::toString() {
   Node* currentNode = head;
   string output = "";
+
+  if(currentNode == NULL) {
+    output = "[]";
+  }
   while(currentNode != NULL) {
     output = output + to_string(currentNode->index) + ": [" + to_string(currentNode->data) + "]\n";
     currentNode = currentNode->next;
   }
+
   return output;
 };
